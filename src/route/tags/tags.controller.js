@@ -1,7 +1,7 @@
-const tags = require(`../../database/tags.testData`);
+const tags = require(`../../database/tags.testdata`);
 
 async function getTags(req, res) {
-  return tags;
+  res.json(tags);
 }
 
 module.exports = {
